@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
             num2 = parseInt(secondNumber.getText().toString());
             sum = num1 + num2;
             addResult.setText(Integer.toString(sum));
-            manager.cancel(0);
         }else{
             mBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this).setSmallIcon(R.drawable.logo);
             mBuilder.setContentTitle("Please enter a value!").setAutoCancel(true);;
